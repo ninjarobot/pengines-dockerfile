@@ -26,4 +26,10 @@ You may also prefer to use `--rm` to ensure the container is removed when stoppe
 docker run --rm -p 0.0.0.0:3030:3030 -i -t pengines
 ```
 
+By the way, if you are running it interactively, use `halt.` to stop the server.
+
+```
+?- halt.
+```
+
 If you experience any issues with this image or have any suggestions, please open an Issue or PR.
