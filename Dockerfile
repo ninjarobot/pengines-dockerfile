@@ -19,5 +19,5 @@ EXPOSE 3030
 # Set the pengines admin account to admin:admin
 RUN echo 'admin:$1$vUXiHMJy$DI1JHDLqTytUYGTHicJvE0' >>/pengines/passwd
 WORKDIR /pengines
-ENTRYPOINT /usr/local/bin/swipl
-CMD -q run.pl
+ENTRYPOINT ["/usr/local/bin/swipl"]
+CMD ["-q","run.pl"]
