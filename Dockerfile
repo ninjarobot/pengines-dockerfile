@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
         libxpm-dev libxt-dev \
         libdb-dev \
         openjdk-7-jdk junit
-RUN wget http://www.swi-prolog.org/download/stable/src/swipl-7.2.3.tar.gz && tar -xzvf swipl-7.2.3.tar.gz && cd swipl-7.2.3 && ./configure && make && make install && make world && make install-world
+RUN wget http://www.swi-prolog.org/download/stable/src/swipl-7.4.0-rc1.tar.gz && tar -xzvf swipl-7.4.0-rc1.tar.gz && cd swipl-7.4.0-rc1 && ./configure && make && make install && make world && make install-world
 RUN git clone https://github.com/SWI-Prolog/pengines
 # Expose the default port for pengines
 EXPOSE 3030
