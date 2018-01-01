@@ -1,7 +1,7 @@
 FROM swipl:7.7.7
 LABEL maintainer "Dave Curylo <dave@curylo.org>"
 ADD https://github.com/SWI-Prolog/pengines/archive/master.tar.gz /
-RUN tar -xzf master.tar.gz && mv pengines-master pengines
+RUN tar -xzf master.tar.gz && mv pengines-master pengines && rm master.tar.gz
 # Expose the default port for pengines
 EXPOSE 3030
 # Set the pengines admin account to admin:admin
