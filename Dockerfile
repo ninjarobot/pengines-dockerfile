@@ -1,4 +1,4 @@
-FROM swipl:7.7.4
+FROM swipl:7.7.7
 LABEL maintainer "Dave Curylo <dave@curylo.org>"
 ADD https://github.com/SWI-Prolog/pengines/archive/master.tar.gz /
 RUN tar -xzf master.tar.gz && mv pengines-master pengines
